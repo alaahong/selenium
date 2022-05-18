@@ -19,8 +19,22 @@ def selenium_java_deps():
             ),
             "com.google.code.gson:gson:2.9.0",
             "com.google.guava:guava:31.1-jre",
-            "com.google.auto:auto-common:1.2.1",
-            "com.google.auto.service:auto-service:1.0.1",
+            maven.artifact(
+                group = "com.google.auto",
+                artifact = "auto-common",
+                version = "1.2.1",
+                exclusions = [
+                    "com.google.guava:guava",
+                ],
+            ),
+            maven.artifact(
+                group = "com.google.auto.service",
+                artifact = "auto-service",
+                version = "1.0.1",
+                exclusions = [
+                    "com.google.guava:guava",
+                ],
+            ),
             "com.google.auto.service:auto-service-annotations:1.0.1",
             "com.graphql-java:graphql-java:18.0",
             "com.graphql-java:java-dataloader:3.1.2",
