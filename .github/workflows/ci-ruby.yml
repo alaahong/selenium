@@ -30,7 +30,7 @@ jobs:
         target: [ 'selenium-devtools', 'selenium-webdriver' ]
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
@@ -57,7 +57,7 @@ jobs:
         os: [ 'ubuntu-latest', 'windows-latest' ]
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
@@ -103,7 +103,7 @@ jobs:
         os: [ 'windows-latest' ]
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
@@ -135,7 +135,7 @@ jobs:
         os: [ 'ubuntu-latest', 'windows-latest' ]
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
@@ -177,7 +177,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache Bazel artifacts
         uses: ./.github/actions/cache-bazel
         with:
@@ -194,7 +194,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache Bazel artifacts
         uses: ./.github/actions/cache-bazel
         with:
@@ -219,7 +219,7 @@ jobs:
             os: windows-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache Bazel artifacts
         uses: ./.github/actions/cache-bazel
         with:

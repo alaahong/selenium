@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache Bazel artifacts
         uses: actions/cache@v3
         with:
@@ -55,7 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Cache Bazel artifacts
@@ -89,7 +89,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Cache Bazel artifacts
@@ -119,7 +119,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache Bazel artifacts
         uses: actions/cache@v3
         with:
@@ -154,7 +154,7 @@ jobs:
           - { "browser": "chrome", "version": "stable" }
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache Bazel artifacts
         uses: actions/cache@v3
         with:
@@ -211,7 +211,7 @@ jobs:
           - { "browser": "chrome", "version": "stable" }
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache Bazel artifacts
         uses: actions/cache@v3
         with:
@@ -261,7 +261,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache Bazel artifacts
         uses: actions/cache@v3
         with:
@@ -304,7 +304,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache Bazel artifacts
         uses: actions/cache@v3
         with:
